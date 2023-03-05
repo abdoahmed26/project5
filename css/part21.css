@@ -1,0 +1,521 @@
+:root {
+    --main-color:black;
+    --color2:#f1f1f1;
+    --color3:#9e9e9e;
+    --color4:#616161;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Raleway", sans-serif;
+}
+.nav1 {
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+}
+.nav1 button {
+    outline: 0;
+    border: 0;
+    height: 65px;
+    cursor: pointer;
+    padding: 15px;
+}
+.nav1 button:hover{
+    background-color: #bebdbd;
+}
+.nav1 button i {
+    font-size: 35px;
+    font-weight: bold;
+}
+.nav1 img{
+    width: 65px;
+    height: 65px;
+    margin: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.nav1 img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+@media (min-width:991px) {
+    .nav1{
+        display: none;
+    }
+}
+nav .nav2{
+    background-color: white !important;
+    position: fixed;
+    top: 0%;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    padding: 20px 0px;
+    z-index: 100;
+}
+nav .nav2 .img{
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav2 .img img{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+nav .nav2 .img button {
+    outline: 0;
+    border: 0;
+    height: 60px;
+    cursor: pointer;
+    padding: 0px 15px;
+    
+    background-color: white;
+}
+nav .nav2 .img button:hover{
+    background-color: #bebdbd;
+}
+nav .nav2 .img button i{
+    outline: 0;
+    border: 0;
+    font-size: 55px;
+    font-weight: bold;
+}
+@media (min-width:991px) {
+    nav .nav2 .img button{
+        display: none;
+    }
+}
+nav .nav2 .list {
+    margin-bottom: 20px;
+}
+nav .nav2 .list h3 {
+    padding: 0px 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+nav .nav2 .list p {
+    padding: 0px 15px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+nav .nav2 .list ul{
+    list-style-type: none;
+}
+nav .nav2 .list ul li{
+    padding: 10px 15px;
+}
+nav .nav2 .list ul li:hover{
+    background-color: #ccc;
+}
+nav .nav2 .list ul li a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 15px;
+}
+nav .nav2 .list ul li:first-child a{
+    color: #009688;
+}
+nav .nav2 .list ul li a i{
+    margin-right: 10px;
+}
+nav .nav2 .icons{
+    padding: 0px 15px;
+    font-size: 17px;
+}
+nav .nav2 .icons i:hover{
+    color: var(--color4);
+} 
+@media (max-width:991px) {
+    nav .nav2 {
+        display: none;
+    }
+}
+header,
+main{
+    padding: 0px 20px 0px 320px;
+    background-color: var(--color2);
+}
+@media (max-width:991px) {
+    header,
+    main{
+        padding: 0px 15px;
+    }
+}
+header .one{
+    padding: 15px 0px;
+    padding-bottom: 20px;
+    position: relative;
+}
+header .one h1{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+header .one .fil span{
+    margin-right: 15px;
+}
+header .one .fil button{
+    border: 0;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: white;
+    cursor: pointer;
+}
+@media (max-width:500px) {
+    header .one .fil button.pho,
+    header .one .fil button.pin {
+        display: none;
+    }
+}
+header .one .fil button i{
+    margin-right: 10px;
+}
+header .one .fil button.first{
+    background-color: var(--main-color);
+    color: white;
+}
+header .one .fil button:hover{
+    background-color: var(--color3);
+    color: var(--main-color);
+}
+header .one::after{
+    content: "";
+    background-color: var(--color3);
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+main .lor{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 15px;
+    padding-top: 15px;
+}
+main .lor div{
+    background-color: white;
+    height: fit-content;
+    padding-bottom: 15px;
+}
+main .lor div img{
+    width: 100%;
+    height: 65%;
+}
+main .lor div h3{
+    padding: 15px;
+    font-size: 16px;
+}
+main .lor div p{
+    padding: 0px 15px 0px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+main .num{
+    padding: 50px 0px;
+    text-align: center;
+}
+main .num a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: var(--main-color);
+}
+main .num a:first-child,
+main .num a:last-child{
+    font-size: 10px;
+    font-weight: bold;
+    padding: 16px 15px 12px;
+}
+main .num a.un{
+    background-color: var(--main-color);
+    color: white;
+}
+main .num a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+main .num a.un:hover{
+    background-color: var(--color3);
+    color: var(--main-color);
+}
+.pic{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(49%,1fr));
+    gap: 10px;
+}
+.pic div img{
+    width: 100%;
+}
+.about{
+    padding: 35px 0px;
+}
+.about h3{
+    margin-bottom: 15px;
+}
+.about p{
+    line-height: 1.6;
+    font-size: 15px;
+}
+.skill{
+    margin-bottom: 20px;
+}
+.skill h2{
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.skill .lls{
+    margin-bottom: 40px;
+}
+.skill article{
+    margin-bottom: 15px;
+}
+.skill article p{
+    margin-bottom: 15px;
+}
+.skill article div {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: var(--color3);
+}
+.skill article div span::after {
+    content: attr(data-progress);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.skill article div span {
+    background-color: var(--color4);
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+.skill .lin a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--color4);
+    color: white;
+    font-size: 15px;
+}
+.skill .lin a i{
+    margin-right: 10px;
+}
+.skill .lin a:hover{
+    background-color: #ccc;
+    color: var(--main-color);
+}
+.pro {
+    padding: 50px 0px;
+}
+.pro h3{
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.pro div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 20px;
+}
+.pro div article {
+    background-color: white;
+    height: fit-content;
+    text-align: center;
+    border:1px solid #ccc ;
+    opacity: 0.6;
+}
+.pro div article:hover{
+    opacity: 1;
+}
+.pro div article h2 {
+    background-color: var(--main-color);
+    color: white;
+    padding: 30px 0px;
+    font-weight: lighter;
+}
+.pro div article ul {
+    list-style-type: none;
+}
+.pro div article ul li {
+    padding: 15px 0px;
+    border-bottom:1px solid #ddd ;
+}
+.pro div article ul li:last-child{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.pro div article ul li:last-child p {
+    padding-top: 15px;
+    font-size: 15px;
+    color: rgb(131, 130, 130);
+    font-weight: lighter;
+}
+.pro div article.pr h2 {
+    background-color: #009688;
+}
+.pro div article p.up{
+    padding: 30px 0px;
+    background-color: var(--color2);
+}
+.pro div article a {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color:  #009688;
+    color:white;
+}
+.pro div article a:hover {
+    background-color: black;
+}
+.con{
+    padding: 25px 20px 25px 320px;
+    background-color: var(--color3);
+}
+@media (max-width:991px) {
+    .con{
+        padding: 25px 15px;
+    }
+}
+.con .for{
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.con .for article{
+    padding: 20px 0px;
+    text-align: center;
+    background-color: var(--color4);
+    color: white;
+}
+.con .for article:nth-child(2){
+    background-color: #009688;
+}
+.con .for article i{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.con form {
+    padding: 20px 0px 0px;
+    position: relative;
+}
+.con  form::after{
+    content: "";
+    background-color: var(--color2);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.con  form div{
+    margin-bottom: 15px;
+}
+.con form div input{
+    width: 100%;
+    height: 35px;
+    border: 0;
+}
+.con form button{
+    border: 0px;
+    padding: 10px 15px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+.con form button i{
+    margin-right: 10px;
+}
+.con form button:hover{
+    background-color: #ccc;
+    color: var(--main-color);
+}
+.pos{
+    padding: 35px 20px 35px 320px;
+    background-color: var(--color4);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px;
+}
+@media (max-width:991px) {
+    .pos{
+        padding: 35px 15px;
+    }
+}
+.pos div h3{
+    font-weight: lighter;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+.pos .foot > p{
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.pos .foot p span{
+    color: var(--color2);
+    text-decoration: underline;
+}
+.pos .blog article{
+    display: flex;
+    padding: 15px;
+}
+.pos .blog article:hover{
+    background-color: var(--color3);
+}
+.pos .blog article img{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.pos .blog article div h4{
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+.pos .pop p span{
+    display: inline-block;
+    background-color: var(--color3);
+    color: var(--main-color);
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 14px;
+}
+.pos .pop p span:first-child {
+    background-color: var(--main-color);
+    color: white;
+}
+footer{
+    padding: 20px 20px 20px 320px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+}
+@media (max-width:991px) {
+    footer{
+        padding: 20px 15px;
+    }
+}
+footer span{
+    color: var(--color3);
+}
